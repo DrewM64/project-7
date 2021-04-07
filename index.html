@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebApp&trade; | Drew Montgomery</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="grid-container">
     <header>
         <h1>WebApp&trade;</h1>
         <div>
@@ -18,9 +19,9 @@
     </header>
     <nav>
         <a href="#"><img src="svgs/home.svg" alt=""></a>
-        <a href="#"><img src="svgs/bar-chart.svg" alt=""></a>
-        <a href="#"><img src="svgs/members.svg" alt=""></a>
-        <a href="#"><img src="svgs/settings.svg" alt=""></a>
+        <a href="#traffic"><img src="svgs/bar-chart.svg" alt=""></a>
+        <a href="#members"><img src="svgs/members.svg" alt=""></a>
+        <a href="#settings"><img src="svgs/settings.svg" alt=""></a>
     </nav>
     <main>
         <div class="main-header">
@@ -33,7 +34,7 @@
             <!-- JS alert bar -->
         </div>
 
-        <section class="traffic">
+        <section id="traffic">
             <div class="traffic-header">
                 <h3>Traffic</h3>
 
@@ -50,7 +51,7 @@
             </div>
         </section>
 
-        <section class="daily">
+        <section id="daily">
             <h3>Daily Traffic</h3>
 
             <div class="widget-container-half">
@@ -59,7 +60,7 @@
             </div>
         </section>
 
-        <section class="mobile">
+        <section id="mobile">
             <h3>Mobile Users</h3>
 
             <div class="widget-container-half">
@@ -68,7 +69,7 @@
             </div>
         </section>
 
-        <section class="social">
+        <section id="social">
             <h3>Social Stats</h3>
             <div class="social-container">
                 <div class="social-image">
@@ -99,7 +100,7 @@
             </div>
         </section>
 
-        <section class="members">
+        <section id="members">
             <h3>New Members</h3>
 
             <div class="members-container">
@@ -136,7 +137,7 @@
             </div>
         </section>
 
-        <section class="recent-activity">
+        <section id="recent-activity">
             <!-- recent -->
             <h3>Recent Activity</h3>
 
@@ -170,7 +171,7 @@
             </div>
         </section>
 
-        <section class="message">
+        <section id="message">
             <h3>Message User</h3>
             <form class="widget-container">
                 <input type="text" placeholder="Search for user" class="form-field" id="userField">
@@ -179,7 +180,7 @@
             </form>
         </section>
 
-        <section class="settings">
+        <section id="settings">
             <h3>Settings</h3>
             <!-- CSS toggle -->
             <!-- CSS toggle -->
@@ -196,5 +197,6 @@
             </div>
         </section>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>
