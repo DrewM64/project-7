@@ -1,3 +1,7 @@
+/* =============== 
+   General layout 
+  ================ */
+
 .grid-container {
     display: grid;
     grid-template-columns: 100%;
@@ -8,12 +12,25 @@
         "main";
 }
 
+header,
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
 header {
     grid-area: header;
+    padding: 20px;
+    height: 80px;
+    width: 100%;
 }
 
 nav {
     grid-area: nav;
+    height: 60px;
+    padding: 10px 60px;
+    width: 90%;
+    margin: 1em auto;
 }
 
 main {
@@ -25,6 +42,17 @@ main {
 .widget-container-half {
     width: 95vw;
 }
+
+.graphic {
+    width: 20%;
+    margin: 1em auto;
+}
+
+
+/*================== 
+   Media Queries 
+ ===================*/
+
 
 @media (min-width: 768px) {
     .grid-container {

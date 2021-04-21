@@ -8,21 +8,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="grid-container">
+    
+    
     <header>
         <h1>WebApp&trade;</h1>
         <div>
-            <img src="svgs/bell.svg" alt="">
+            <div class="graphic">
+                <img src="svgs/bell.svg" alt="notifications icon">
+            </div>
             <div id="notifications"></div>
         </div>
-        <img src="images/member-1.jpg" alt="">
+        <img src="images/member-1.jpg" alt="profile icon">
         <h3>Drew Montgomery</h3>
     </header>
+    
+    
     <nav>
-        <a href="#"><img src="svgs/home.svg" alt=""></a>
-        <a href="#traffic"><img src="svgs/bar-chart.svg" alt=""></a>
-        <a href="#members"><img src="svgs/members.svg" alt=""></a>
-        <a href="#settings"><img src="svgs/settings.svg" alt=""></a>
+        <div class="graphic"><a href="#"><img src="svgs/home.svg" alt=""></a></div>
+        <div class="graphic"><a href="#traffic"><img src="svgs/bar-chart.svg" alt=""></a></div>
+        <div class="graphic"><a href="#members"><img src="svgs/members.svg" alt=""></a></div>
+        <div class="graphic"><a href="#settings"><img src="svgs/settings.svg" alt=""></a></div>
     </nav>
+
+
     <main>
         <div class="main-header">
             <h2 class="headline">Dashboard</h2>
@@ -197,7 +205,9 @@
             </div>
         </section>
     </main>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.2/chart.min.js"></script>
     <script src="app.js"></script>
+
 </body>
 </html>
