@@ -47,14 +47,15 @@ main {
         Style 
  ===================*/
 
-svg {
+header svg, 
+nav svg {
     fill: white;
 }
 
  /* --- header --- */
 
  header {
-    background-color: lightblue;
+    background-color: #7477BF;
     padding: 10px 20px;
 
  }
@@ -113,7 +114,7 @@ header h3 {
 /* --- main --- */
 
  main {
-    background-color: aquamarine;
+    background-color: white;
     padding: 0 20px;
  }
 
@@ -121,12 +122,53 @@ header h3 {
  .alert-banner {
      display: flex;
      flex-direction: row;
-     background-color: lightblue;
+     background-color: #7477BF;
      border-radius: 7px;
      padding: 0 20px;
      justify-content: space-between;
  }
 
+ /* traffic list items */
+
+ ul {
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: block;
+    flex: 0 1 auto; /* Default */
+    list-style-type: none;
+}
+
+/* social stats */
+.social-container {
+    background-color: azure;
+    border: solid 3px gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.social-image {
+    background-color: #7477BF;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.social-image svg {
+    fill: white;
+    width: 50px;
+}
+.social-text {
+    margin-left: 20px;
+}
 
 /*================== 
    Media Queries 
