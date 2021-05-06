@@ -1,6 +1,6 @@
-/* body {
-    font-family: TBD;
-} */
+body {
+    font-family: sans-serif;
+} 
 
 /* =============== 
    General layout 
@@ -57,8 +57,12 @@ nav svg {
  header {
     background-color: #7477BF;
     padding: 10px 20px;
-
  }
+
+header h1, 
+header h3 {
+    color: white;
+}
 
  .current-user {
      display: flex;
@@ -71,7 +75,7 @@ nav svg {
     margin: 1em auto;
 }
 #notifications {
-    background-color: green;
+    background-color: lime;
     border-radius: 50%;
     width: 10px;
     height: 10px;
@@ -93,7 +97,7 @@ header h3 {
 /* --- nav bar --- */
 
  nav {
-    background-color: cornflowerblue;
+    background-color: rgb(71, 73, 104);
     padding: 10px 0;
     justify-content: center;
  }
@@ -115,7 +119,7 @@ header h3 {
 
  main {
     background-color: white;
-    padding: 0 20px;
+    padding: 0 20px 20px;
  }
 
  /* alert banner */
@@ -124,8 +128,14 @@ header h3 {
      flex-direction: row;
      background-color: #7477BF;
      border-radius: 7px;
-     padding: 0 20px;
+     padding: 10px 20px;
      justify-content: space-between;
+ }
+
+ .alert-banner p {
+    font-size: 1.2rem;
+    color: white;
+    margin: 0;
  }
 
  /* traffic list items */
@@ -146,8 +156,8 @@ li {
 
 /* social stats */
 .social-container {
-    background-color: azure;
-    border: solid 3px gray;
+    background-color: rgb(241, 241, 241);
+    border: solid 1px gray;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -164,11 +174,193 @@ li {
 
 .social-image svg {
     fill: white;
-    width: 50px;
+    width: 60px;
 }
 .social-text {
     margin-left: 20px;
 }
+
+.social-text p:first-child {
+    color: #7477BF;
+    font-size: 2em;
+    margin: 0;
+}
+
+.social-text p:last-child {
+    color: gray;
+    font-size: 4em;
+    margin: 0;
+}
+
+/* new members / recent activity */
+
+.members-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    border-bottom: solid 1px rgb(173, 173, 173);
+}
+
+.members-container img {
+    width: 100px;
+    border-radius: 50%;
+    margin: 5px auto;
+}
+
+.members-container p,
+.members-text {
+    text-align: center;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* message user  */
+
+.widget-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#userField,
+#messageField,
+#send {
+    padding: 15px;
+    border-radius: 10px;
+    border: solid 1px rgb(173, 173, 173);
+}
+
+#userField,
+#messageField {
+    background-color: rgb(241, 241, 241);
+}
+
+#userField::placeholder,
+#messageField::placeholder {
+    color: rgb(173, 173, 173);
+}
+
+#messageField {
+    margin: 20px 0;
+}
+
+#send {
+    background-color: #7477BF;
+    color: white;
+}
+
+/* settings */
+
+#settings {
+    display: flex;
+    flex-direction: column;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 20px 0;
+  }
+
+  .switch .label-text {
+      display: inline-block;
+      width: 300px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 20em;
+    right: -22em;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #7477BF;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #7477BF;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  #timezone {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(245, 245, 245);
+    color: rgb(173, 173, 173);
+    border: solid 2px rgb(173, 173, 173);
+    margin: 20px 0;
+  }
+
+  option:not(:first-of-type) {
+    color: black;
+  }
+
+  /* settings button */
+
+  .settings-button {
+      display: inline-flex;
+      gap: 20px;
+  }
+
+  #save, 
+  #cancel {
+    flex-grow: 1;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    border-style: none;
+  }
+
+  #save {
+      background-color: #7477BF;
+  }
+
+  #cancel {
+      background-color: rgb(155, 155, 155);
+  }
+
 
 /*================== 
    Media Queries 

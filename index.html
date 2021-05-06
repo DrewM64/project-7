@@ -215,18 +215,28 @@
         <section id="settings">
             <h3>Settings</h3>
             <!-- CSS toggle -->
-            <!-- CSS toggle -->
-            <select class="form-field" id="timezone">
-                <option disabled selected>Select a Timezone</option>
-                <option>Eastern</option>
-                <option>Central</option>
-                <option>Mountain</option>
-                <option>Pacific</option>
-            </select>
-            <div class="settings-button">
-                <button class="button-primary" id="save">Save</button>
-                <button class="button-disabled" id="cancel">Cancel</button>
-            </div>
+                <label class="switch">
+                    <span class="label-text">Send Email Notifications</span>
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <!-- CSS toggle -->
+                <label class="switch">
+                    <span class="label-text">Set Profile to Public</span>
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <select class="form-field" id="timezone">
+                    <option disabled selected>Select a Timezone</option>
+                    <option>Eastern</option>
+                    <option>Central</option>
+                    <option>Mountain</option>
+                    <option>Pacific</option>
+                </select>
+                <div class="settings-button">
+                    <button class="button-primary" id="save">Save</button>
+                    <button class="button-disabled" id="cancel">Cancel</button>
+                </div>
         </section>
     </main>
 
