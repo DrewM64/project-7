@@ -185,10 +185,17 @@ li {
 }
 
 /* social stats */
+.social-widgets {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 .social-container {
     background-color: rgb(241, 241, 241);
     border: solid 1px gray;
     border-radius: 10px;
+    flex-grow: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -421,7 +428,7 @@ input:checked + .slider .off
 
 @media (min-width: 768px) {
     .grid-container {
-        grid-template-columns: 55px 1fr;
+        grid-template-columns: 70px 1fr;
         grid-template-areas: 
             "header header"
             "nav main";
@@ -431,20 +438,22 @@ input:checked + .slider .off
         grid-template-columns: 50%;
     }
 
+    .main-header,
+    #alert,
     #traffic, 
-    #social {
+    #social, 
+    #members,
+    #recent-activity,
+    #message, 
+    #settings {
         grid-column: 1 / span 2;
     }
 
-    #daily,
-    #members, 
-    #message {
+    #daily {
         grid-column: 1 / span 1;
     }
 
-    #mobile, 
-    #recent-activity,
-    #settings {
+    #mobile {
         grid-column: 2 / span 1;
     }
 
@@ -456,19 +465,89 @@ input:checked + .slider .off
         width: 45vw;
     }
     
+    /* ---header--- */
+    
+
     /* ---nav--- */
 
     .navbar {
         flex-direction: column;
         justify-content: flex-start;
+        padding: 10px 20px;
     }
     .nav-icon {
         width: 100%;
     }
+
+    /* ---traffic section */
+
+    .traffic-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: space-between;
+    }
+
+    .traffic-nav {
+        width: 400px;
+        justify-content: flex-end;
+    }
+
+    /* ---social stats--- */
+
+    .social-widgets {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .social-container:nth-child(2) {
+        margin-left:  10px;
+        margin-right: 10px;
+    }
+
+    .social-image {
+        padding: 20px;
+    }
+
+    .social-image svg {
+        width: 40px;
+    }
+    .social-text {
+        margin-left: 20px;
+    }
+
+    .social-text p:first-child {
+        font-size: 1.25em;
+    }
+
+    .social-text p:last-child {
+        font-size: 2.5em;
+    }
+
 }
 
 
 
-/* @media (min-width: 1024px) {
+@media (min-width: 1024px) {
 
-} */
+    #members,
+    #message 
+    {
+        grid-column: 1 / span 1;
+    }
+
+    #recent-activity,
+    #settings {
+        grid-column: 2 / span 1;
+    }
+
+    /* ---header--- */
+
+    /* ---social stats--- */
+
+    .social-container:nth-child(2) {
+        margin-left:  20px;
+        margin-right: 20px;
+    }
+
+}
