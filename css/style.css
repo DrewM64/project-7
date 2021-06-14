@@ -147,9 +147,13 @@ header h3 {
 
 /* --- main --- */
 
+section {
+    padding: 20px 20px;
+}
+
  main {
     background-color: white;
-    padding: 0 20px 20px;
+    padding: 0 0 20px;
  }
 
  /* alert banner */
@@ -182,6 +186,16 @@ li {
     display: block;
     flex: 0 1 auto; /* Default */
     list-style-type: none;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 50px;
+    transition: background-color .2s, color .1s;
+}
+
+li:hover {
+    background-color: rgb(118, 202, 118);
+    color: white;
+    cursor: pointer;
 }
 
 /* social stats */
@@ -251,7 +265,7 @@ li {
     font-size: 1.2rem;
 }
 
-/* message user  */
+/* message user */
 
 .widget-container {
     display: flex;
@@ -290,6 +304,7 @@ li {
 #settings {
     display: flex;
     flex-direction: column;
+    border-top: solid 1px rgb(173, 173, 173);
 }
 
 /* The switch - the box around the slider */
@@ -485,12 +500,11 @@ input:checked + .slider .off
         display: flex;
         flex-direction: row;
         align-items: center;
-        align-content: space-between;
+        justify-content: space-between;
     }
 
     .traffic-nav {
         width: 400px;
-        justify-content: flex-end;
     }
 
     /* ---social stats--- */
