@@ -39,6 +39,7 @@ main {
 .widget-container-full,
 .widget-container-half {
     width: 95vw;
+    margin:auto;
 }
 
 
@@ -151,10 +152,33 @@ section {
     padding: 20px 20px;
 }
 
+section:not(:last-child) {
+    border-bottom: solid 1px rgb(173, 173, 173);
+}
+
  main {
     background-color: white;
     padding: 0 0 20px;
  }
+
+/* Dashboard */
+
+.main-header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.headline {
+    padding: 0 20px;
+}
+
+.main-header-gray {
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    border-left: solid 1px gray;
+    border-bottom: solid 1px gray;
+}
 
  /* alert banner */
  .alert-banner {
@@ -164,6 +188,7 @@ section {
      border-radius: 7px;
      padding: 10px 20px;
      justify-content: space-between;
+     margin: 0 20px;
  }
 
  .alert-banner p {
@@ -249,6 +274,9 @@ li:hover {
     display: flex;
     flex-direction: column;
     padding: 20px 0;
+}
+
+.members-container:not(:last-child) {
     border-bottom: solid 1px rgb(173, 173, 173);
 }
 
@@ -304,7 +332,6 @@ li:hover {
 #settings {
     display: flex;
     flex-direction: column;
-    border-top: solid 1px rgb(173, 173, 173);
 }
 
 /* The switch - the box around the slider */

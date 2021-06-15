@@ -112,11 +112,12 @@ const mobileData = {
 
 const mobileOptions = {
     legend: {
-        display: false,
+        display: true,
         position: 'right',
         labels: {
-            boxWidth: 10,
-            fontStyle: 'bold'
+            boxWidth: 20,
+            fontStyle: 'bold',
+            fontSize: 20
         }
     }
 }
