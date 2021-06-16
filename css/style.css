@@ -224,6 +224,7 @@ li:hover {
 }
 
 /* social stats */
+
 .social-widgets {
     display: flex;
     flex-direction: column;
@@ -280,17 +281,26 @@ li:hover {
     border-bottom: solid 1px rgb(173, 173, 173);
 }
 
-.members-container img {
+.profile-image {
     width: 100px;
     border-radius: 50%;
     margin: 5px auto;
 }
 
-.members-container p,
-.members-text {
+.members-text,
+.timestamp
+ {
     text-align: center;
     margin: 0;
     font-size: 1.2rem;
+}
+
+.members-container p {
+    margin: 0;
+}
+
+.right-arrow {
+    display: none;
 }
 
 /* message user */
@@ -534,6 +544,11 @@ input:checked + .slider .off
         width: 400px;
     }
 
+    /* tablet view mobile chart border */
+    #mobile {
+        border-left: solid 1px rgb(173, 173, 173);
+    }
+
     /* ---social stats--- */
 
     .social-widgets {
@@ -565,6 +580,39 @@ input:checked + .slider .off
         font-size: 2.5em;
     }
 
+    /* --- members / recent activity --- */
+
+    .members-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .profile-image {
+        margin: 0 20px 0 0;
+        width: 70px;
+    }
+
+    .members-text {
+        text-align: left;
+        font-size: 1.2em;
+    }
+
+    .timestamp,
+    .right-arrow {
+        align-self: center;
+        flex-grow: 1;
+        text-align: right;
+        font-size: 1.2em;
+    }
+
+    .right-arrow {
+        display: inline;
+        font-size: 1.5em;
+        color: #7477BF;
+    }
+
+    
+
 }
 
 
@@ -582,13 +630,28 @@ input:checked + .slider .off
         grid-column: 2 / span 1;
     }
 
-    /* ---header--- */
-
     /* ---social stats--- */
 
     .social-container:nth-child(2) {
         margin-left:  20px;
         margin-right: 20px;
+    }
+
+    /* --- members text --- */
+    .members-text,
+    .timestamp {
+        font-size: 1em;
+    }
+
+    /* section split border */
+    #recent-activity,
+    #settings {
+        border-left: solid 1px rgb(173, 173, 173);
+    }
+
+    /* message */
+    #message {
+        border-bottom: none;
     }
 
 }
