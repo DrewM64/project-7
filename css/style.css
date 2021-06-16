@@ -38,7 +38,7 @@ main {
 
 .widget-container-full,
 .widget-container-half {
-    width: 95vw;
+    width: 90vw;
     margin:auto;
 }
 
@@ -510,11 +510,11 @@ input:checked + .slider .off
     }
 
     .widget-container-full {
-        width: 90vw;
+        width: 85vw;
     }
 
     .widget-container-half {
-        width: 45vw;
+        width: 40vw;
     }
     
     /* ---header--- */
@@ -556,28 +556,29 @@ input:checked + .slider .off
         flex-wrap: nowrap;
         justify-content: space-between;
     }
+
     .social-container:nth-child(2) {
         margin-left:  10px;
         margin-right: 10px;
     }
 
     .social-image {
-        padding: 20px;
+        padding: 10px;
     }
 
     .social-image svg {
-        width: 40px;
+        width: 30px;
     }
     .social-text {
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
     .social-text p:first-child {
-        font-size: 1.25em;
+        font-size: 1em;
     }
 
     .social-text p:last-child {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     /* --- members / recent activity --- */
